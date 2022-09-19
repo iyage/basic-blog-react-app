@@ -1,0 +1,18 @@
+.NavIcon{
+    margin:0px 10px;
+}
+.profileImage{
+  width:100%;
+  border-radius:50%;
+  object-fit:cover;
+  cursor: pointer;
+}
+.searchIcon{
+    cursor: pointer;
+}
+.active{
+  color:rgb(192, 63, 89)
+}
+.in-active{
+  color:gray
+}
