@@ -1,7 +1,8 @@
-import { Add } from '@mui/icons-material'
+import {Add} from '@mui/icons-material'
 import React from 'react'
 import styled from 'styled-components'
 import './write.css'
+
 const Writecontainer = styled.div`
     width: 97vw;
     margin: auto;
@@ -12,7 +13,7 @@ const Writecontainer = styled.div`
 const WriteForm = styled.form`
     width: 100%;
 `
-const Label  = styled.label`
+const Label = styled.label`
 &:first-child{
     cursor: pointer;
     font-size: 50px;
@@ -28,7 +29,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 `
-const PostTitle = styled.input.attrs({type:'text',placeholder:'Post Title',autoFocus:'true'})`
+const PostTitle = styled.input.attrs({type: 'text', placeholder: 'Post Title', autoFocus: 'true'})`
 width: 70vw;
 height: 50px;
 border:none;
@@ -49,8 +50,9 @@ const FormGroup = styled.div`
     align-items: center;
     justify-content: center;
     margin-top: 20px;
-` 
- const TextArea = styled.textarea.attrs({placeholder:'Write your thought.....'
+`
+const TextArea = styled.textarea.attrs({
+    placeholder: 'Write your thought.....'
 })`
 width: 70vw;
 height:250px;
@@ -64,8 +66,8 @@ font-size: 30px;
     font-size: 20px;
 }
 `
-const InsertImg = styled.input.attrs({type:'file',accept:'image/*'})
-``
+const InsertImg = styled.input.attrs({type: 'file', accept: 'image/*'})
+    ``
 const SelectedImg = styled.img`
 width: 70vw;
 height:350px;
@@ -90,29 +92,31 @@ cursor:pointer;
     padding: 0.5em  1em;
 }
 `
+
 function Write() {
-  return (
-    <Writecontainer>
-        <WriteForm>
-            <FormGroup>
-                <SelectedImg src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-            </FormGroup>
-        <FormGroup>
-        <Label htmlFor="insert-image">
-        <Add/>
-        </Label>
-        <InsertImg  id='insert-image' style={{display:'none'}}/>
-        <PostTitle/>
-     <PublishButton>Publish</PublishButton>
-        </FormGroup>
-       
-        <FormGroup>
-        <TextArea></TextArea>
-        </FormGroup>
-       
-        </WriteForm>
+    return (
+        <Writecontainer>
+            <WriteForm>
+                <FormGroup>
+                    <SelectedImg
+                        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+                </FormGroup>
+                <FormGroup>
+                    <Label htmlFor="insert-image">
+                        <Add/>
+                    </Label>
+                    <InsertImg id='insert-image' style={{display: 'none'}}/>
+                    <PostTitle/>
+                    <PublishButton>Publish</PublishButton>
+                </FormGroup>
+
+                <FormGroup>
+                    <TextArea></TextArea>
+                </FormGroup>
+
+            </WriteForm>
         </Writecontainer>
-  )
+    )
 }
 
 export default Write

@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import './header.css'
+
 const HeaderContainer = styled.div`
 width: 100vw;
 margin-top: 80px;
@@ -48,33 +49,33 @@ width:99vw;
 height: 450px;
 margin: auto;
 `
-const Img= styled.img`
+const Img = styled.img`
   width:100% ;
 `
 
 
 function Header() {
-  return (
-    <>
-<HeaderContainer>
-    <HeaderTitle>
-        <HeaderTitleSm>
-            React UI
-        </HeaderTitleSm>
-        <HeaderTitleLg>
-            Blog
-        </HeaderTitleLg>
-    </HeaderTitle>
-    <HeaderImg>
-    < Img
-        className="headerImg"
-        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-        alt=""
-      />
-    </HeaderImg>
-</HeaderContainer>
-    </>
-  )
+    return (
+        <>
+            <HeaderContainer>
+                <HeaderTitle>
+                    <HeaderTitleSm>
+                        React UI
+                    </HeaderTitleSm>
+                    <HeaderTitleLg>
+                        Blog
+                    </HeaderTitleLg>
+                </HeaderTitle>
+                <HeaderImg>
+                    < Img
+                        className="headerImg"
+                        src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+                        alt=""
+                    />
+                </HeaderImg>
+            </HeaderContainer>
+        </>
+    )
 }
 
 export default Header

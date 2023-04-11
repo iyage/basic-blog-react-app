@@ -1,9 +1,10 @@
-.editIcon{
+.editIcon {
     color: teal;
     margin-left: 10px;
     cursor: pointer;
 }
-.delIcon{
+
+.delIcon {
     color: tomato;
     margin-left: 10px;
     cursor: pointer;

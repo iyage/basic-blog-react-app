@@ -1,6 +1,7 @@
 import React from 'react'
-import { Link, useLocation, useNavigate } from 'react-router-dom'
+import {Link, useLocation, useNavigate} from 'react-router-dom'
 import styled from 'styled-components'
+
 const Logincontainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -80,36 +81,36 @@ const FormHeader = styled.h3`
     margin: 20px 0;
 
 `
+
 function Login({setUser}) {
     const location = useLocation();
     const navigate = useNavigate()
-   
-  return (
-    <Logincontainer>
-        <Form>
-            <FormHeader>Login</FormHeader>
-            <label htmlFor="email">Email</label>
-            <input type="email" name="" id="email" placeholder='Enter Your email' />
-            <label htmlFor="password">Password</label>
-            <input type="password" name="" id="password" placeholder='Enter your password' />
-            <button onClick={(e)=>{e.preventDefault();setUser(true);
-            if(location.state?.from)
-            {
-                navigate(location.state.from,{replace:true})
-            }
-            else
-            {
-                navigate('/')
-            }
-        }}>Login</button>
-            <h5>No Account?</h5>
-            <hr />
-           
+    return (
+        <Logincontainer>
+            <Form>
+                <FormHeader>Login</FormHeader>
+                <label htmlFor="email">Email</label>
+                <input type="email" name="" id="email" placeholder='Enter Your email'/>
+                <label htmlFor="password">Password</label>
+                <input type="password" name="" id="password" placeholder='Enter your password'/>
+                <button onClick={(e) => {
+                    e.preventDefault();
+                    setUser(true);
+                    if (location.state?.from) {
+                        navigate(location.state.from, {replace: true})
+                    } else {
+                        navigate('/')
+                    }
+                }}>Login
+                </button>
+                <h5>No Account?</h5>
+                <hr/>
+
                 <Link to='/register'>Register</Link>
-        </Form>
-       
+            </Form>
+
         </Logincontainer>
-  )
+    )
 }
 
 export default Login

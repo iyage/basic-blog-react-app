@@ -1,13 +1,14 @@
 import styled from 'styled-components';
 import './navbar.css';
 
-import { Pinterest, Search, Twitter } from '@mui/icons-material';
+import {Pinterest, Search, Twitter} from '@mui/icons-material';
 import FacebookOutlinedIcon from '@mui/icons-material/FacebookOutlined';
 import InstagramIcon from '@mui/icons-material/Instagram';
-import { Link, NavLink } from 'react-router-dom';
+import {Link, NavLink} from 'react-router-dom';
 import profileImg from '../../images/271871166_2044402485734007_7144193533059826889_n.jpeg';
+
 <style>
- 
+
 </style>
 const Container = styled.div`
     width: 100%;
@@ -113,47 +114,53 @@ const SearchInput = styled.input`
     }
  }
 `
-function NavBar({user,setUser}) {
-  return (
-<Container>
-    <Wrapper>
-    <NavLeft>
-    <FacebookOutlinedIcon className='NavIcon'/>
-    <InstagramIcon className='NavIcon'/>
-    <Twitter className='NavIcon'/>
-    <Pinterest className='NavIcon'/>
-    </NavLeft>
-<NavCenter>
-<BlogContacts>
-<BlogContact> <NavLink to='/' end  className={({isActive})=>isActive?'active':'in-active'}>HOME</NavLink> </BlogContact>
-<BlogContact> <NavLink to='/about' className={({isActive})=>isActive?'active':'in-active'}>ABOUT</NavLink></BlogContact>
-<BlogContact><NavLink to='/contact' className={({isActive})=>isActive?'active':'in-active'}>CONTACT</NavLink></BlogContact>
-<BlogContact><NavLink to='/publish' className={({isActive})=>isActive?'active':'in-active'}>PUBLISH</NavLink></BlogContact>
-{ user&&
-<BlogContact onClick={()=>setUser(false)}>
-    LOGOUT
-</BlogContact>
-}
-</BlogContacts>
-</NavCenter>
-<NavRight>
-    { user?<ImgContainer>
-    <img src={profileImg} alt="" className='profileImage' />
-    </ImgContainer>:<BlogContacts><BlogContact>
-    <Link to='login'> LOGIN</Link>
-</BlogContact>
-<BlogContact style={{marginLeft:'5px'}}>
-<Link to='register'> REGISTER</Link>
-</BlogContact>
-</BlogContacts>}
-    <SearchContainer>
-        <SearchInput placeholder='Search....'/>
-        <Search className='searchIcon'/>
-    </SearchContainer>
-</NavRight>
-    </Wrapper>
-</Container>
-  )
+
+function NavBar({user, setUser}) {
+    return (
+        <Container>
+            <Wrapper>
+                <NavLeft>
+                    <FacebookOutlinedIcon className='NavIcon'/>
+                    <InstagramIcon className='NavIcon'/>
+                    <Twitter className='NavIcon'/>
+                    <Pinterest className='NavIcon'/>
+                </NavLeft>
+                <NavCenter>
+                    <BlogContacts>
+                        <BlogContact> <NavLink to='/' end
+                                               className={({isActive}) => isActive ? 'active' : 'in-active'}>HOME</NavLink>
+                        </BlogContact>
+                        <BlogContact> <NavLink to='/about'
+                                               className={({isActive}) => isActive ? 'active' : 'in-active'}>ABOUT</NavLink></BlogContact>
+                        <BlogContact><NavLink to='/contact'
+                                              className={({isActive}) => isActive ? 'active' : 'in-active'}>CONTACT</NavLink></BlogContact>
+                        <BlogContact><NavLink to='/publish'
+                                              className={({isActive}) => isActive ? 'active' : 'in-active'}>PUBLISH</NavLink></BlogContact>
+                        {user &&
+                        <BlogContact onClick={() => setUser(false)}>
+                            LOGOUT
+                        </BlogContact>
+                        }
+                    </BlogContacts>
+                </NavCenter>
+                <NavRight>
+                    {user ? <ImgContainer>
+                        <img src={profileImg} alt="" className='profileImage'/>
+                    </ImgContainer> : <BlogContacts><BlogContact>
+                        <Link to='login'> LOGIN</Link>
+                    </BlogContact>
+                        <BlogContact style={{marginLeft: '5px'}}>
+                            <Link to='register'> REGISTER</Link>
+                        </BlogContact>
+                    </BlogContacts>}
+                    <SearchContainer>
+                        <SearchInput placeholder='Search....'/>
+                        <Search className='searchIcon'/>
+                    </SearchContainer>
+                </NavRight>
+            </Wrapper>
+        </Container>
+    )
 }
 
 export default NavBar

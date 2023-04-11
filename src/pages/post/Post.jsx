@@ -41,15 +41,18 @@ const PostDesc = styled.span`
 
 
 const Post = () => {
-  return (
-    <PostContainer>
-        <Img src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
-  <Category>Musi Life</Category>
-  <PostTitle>Lorem ipsum dolor sit amet</PostTitle>
-  <PostDate>1 hour ago</PostDate>
-  <PostDesc>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates neque dolor at aliquid natus voluptate ipsam illum quaerat animi a sint, exercitationem reprehenderit sit illo harum maiores? Praesentium, sequi.</PostDesc>
-    </PostContainer>
-  )
+    return (
+        <PostContainer>
+            <Img
+                src="https://images.pexels.com/photos/1167355/pexels-photo-1167355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+            <Category>Musi Life</Category>
+            <PostTitle>Lorem ipsum dolor sit amet</PostTitle>
+            <PostDate>1 hour ago</PostDate>
+            <PostDesc>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eaque voluptates neque dolor at aliquid
+                natus voluptate ipsam illum quaerat animi a sint, exercitationem reprehenderit sit illo harum maiores?
+                Praesentium, sequi.</PostDesc>
+        </PostContainer>
+    )
 }
 
 export default Post

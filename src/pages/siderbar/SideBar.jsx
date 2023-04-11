@@ -1,7 +1,8 @@
-import { FacebookOutlined, Instagram, Pinterest, Twitter } from '@mui/icons-material';
+import {FacebookOutlined, Instagram, Pinterest, Twitter} from '@mui/icons-material';
 import styled from 'styled-components';
 import sideimg from '../../images/271871166_2044402485734007_7144193533059826889_n.jpeg';
 import './sidebar.css';
+
 const SideBarContainer = styled.div`
     flex: 3;
     background-color: #f8fafc;
@@ -12,7 +13,7 @@ const SideBarContainer = styled.div`
         display: none;
     }
 `
-const SideBarTitle =styled.h4`
+const SideBarTitle = styled.h4`
     font-size: 20px;
     font-weight: 300;
     margin:30px 0;
@@ -44,7 +45,7 @@ font-size: 18px;
 cursor: pointer;
 font-weight: 400;
 `
-const SideBarImageContainer=styled.div`
+const SideBarImageContainer = styled.div`
     width: 80%;
 `
 const SocialMediaContainer = styled.div`
@@ -53,52 +54,53 @@ const SocialMediaContainer = styled.div`
 `
 
 function SideBar() {
-  return (
-    <SideBarContainer>
-        <SideBarTitle>
-            ABOUT ME
-        </SideBarTitle>
-        <SideBarImageContainer>
-        <SideBarImg src={ sideimg}/>
-        </SideBarImageContainer>
-       
-        <SideBarDesc>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus porro quis quod, consequatur magnam totam inventore exercitationem, voluptatem nam facilis
-        </SideBarDesc>
-        <SideBarTitle>
-            CATEGORIES
-        </SideBarTitle>
-        <Category>
-        <CategoryItem>
-        Life
-        </CategoryItem>
-        <CategoryItem>
-        Music
-        </CategoryItem>
-        <CategoryItem>
-       Style
-        </CategoryItem>
-        <CategoryItem>
-        Sport
-        </CategoryItem>
-        <CategoryItem>
-        Tech
-        </CategoryItem>
-        <CategoryItem>
-        Cinema
-        </CategoryItem>
-        </Category>
-        <SideBarTitle>
-            FOLLOW US
-        </SideBarTitle>
-<SocialMediaContainer>
-<FacebookOutlined  className='SiderIcon'/>
-    <Instagram className='SiderIcon'/>
-    <Twitter  className='SiderIcon' />
-    <Pinterest  className='SiderIcon' />
-</SocialMediaContainer>
-    </SideBarContainer>
-  )
+    return (
+        <SideBarContainer>
+            <SideBarTitle>
+                ABOUT ME
+            </SideBarTitle>
+            <SideBarImageContainer>
+                <SideBarImg src={sideimg}/>
+            </SideBarImageContainer>
+
+            <SideBarDesc>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta repellendus porro quis quod, consequatur
+                magnam totam inventore exercitationem, voluptatem nam facilis
+            </SideBarDesc>
+            <SideBarTitle>
+                CATEGORIES
+            </SideBarTitle>
+            <Category>
+                <CategoryItem>
+                    Life
+                </CategoryItem>
+                <CategoryItem>
+                    Music
+                </CategoryItem>
+                <CategoryItem>
+                    Style
+                </CategoryItem>
+                <CategoryItem>
+                    Sport
+                </CategoryItem>
+                <CategoryItem>
+                    Tech
+                </CategoryItem>
+                <CategoryItem>
+                    Cinema
+                </CategoryItem>
+            </Category>
+            <SideBarTitle>
+                FOLLOW US
+            </SideBarTitle>
+            <SocialMediaContainer>
+                <FacebookOutlined className='SiderIcon'/>
+                <Instagram className='SiderIcon'/>
+                <Twitter className='SiderIcon'/>
+                <Pinterest className='SiderIcon'/>
+            </SocialMediaContainer>
+        </SideBarContainer>
+    )
 }
 
 export default SideBar

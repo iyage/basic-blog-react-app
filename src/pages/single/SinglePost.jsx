@@ -1,7 +1,8 @@
-import { Delete, Edit } from '@mui/icons-material'
+import {Delete, Edit} from '@mui/icons-material'
 import React from 'react'
 import styled from 'styled-components'
 import './single.css'
+
 const SinglePostContainer = styled.div`
     flex: 9;
    padding: 20px;
@@ -58,36 +59,50 @@ const PostContent = styled.p`
         padding: 5px;
     }
 `
+
 function SinglePost() {
-  return (
-   
-    
-         <SinglePostContainer>
-            < PostImg  src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
+    return (
+
+
+        <SinglePostContainer>
+            < PostImg
+                src="https://images.pexels.com/photos/6685428/pexels-photo-6685428.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"/>
             <PostTitlecontainer>
                 <PostTitle>Lorem ipsum dolor sit</PostTitle>
                 <Editpost><Edit className='editIcon'/> <Delete className='delIcon'/> </Editpost>
             </PostTitlecontainer>
-    <PostAuthor >
-        <AuthorName>Author: Yage</AuthorName>
-        <PostDate>1 hour ago</PostDate>
-    </PostAuthor>
-    <PostContent>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
-    </PostContent>
-         </SinglePostContainer>
-  )
+            <PostAuthor>
+                <AuthorName>Author: Yage</AuthorName>
+                <PostDate>1 hour ago</PostDate>
+            </PostAuthor>
+            <PostContent>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id obcaecati alias, inventore quo itaque enim
+                nihil aliquam dolores quae nemo quam et earum aperiam placeat ipsa beatae dolorem suscipit commodi?
+            </PostContent>
+        </SinglePostContainer>
+    )
 }
 
 export default SinglePost

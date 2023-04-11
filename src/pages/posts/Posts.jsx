@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import Post from '../post/Post'
 import './posts.css'
+
 const PostContainer = styled.div`
     flex: 9;
     display: flex;
@@ -11,14 +12,14 @@ const PostContainer = styled.div`
 `
 
 function Posts() {
-  return (
-    <PostContainer>
-        <Post/>
-        <Post/>
-        <Post/>
-        <Post/>
-    </PostContainer>
-  )
+    return (
+        <PostContainer>
+            <Post/>
+            <Post/>
+            <Post/>
+            <Post/>
+        </PostContainer>
+    )
 }
 
 export default Posts

@@ -55,21 +55,21 @@ const FormHeader = styled.h3`
     `
 
 function Register() {
-  return (
-    <Registercontainer>
-    <Form>
-        <FormHeader>Register</FormHeader>
-        <label htmlFor="username">Username</label>
-        <input type="text" name="" id="username" placeholder='johndoe' />
-        <label htmlFor="email">Email</label>
-        <input type="email" name="" id="email" placeholder='doe@gmail.com' />
-        <label htmlFor="password">Password</label>
-        <input type="password" name="" id="password" placeholder='Enter your password' />
-        <button>Register</button>
-    </Form>
-   
-    </Registercontainer>
-  )
+    return (
+        <Registercontainer>
+            <Form>
+                <FormHeader>Register</FormHeader>
+                <label htmlFor="username">Username</label>
+                <input type="text" name="" id="username" placeholder='johndoe'/>
+                <label htmlFor="email">Email</label>
+                <input type="email" name="" id="email" placeholder='doe@gmail.com'/>
+                <label htmlFor="password">Password</label>
+                <input type="password" name="" id="password" placeholder='Enter your password'/>
+                <button>Register</button>
+            </Form>
+
+        </Registercontainer>
+    )
 }
 
 export default Register

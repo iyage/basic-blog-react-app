@@ -1,10 +1,10 @@
-
-import { faCircleUser } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import {faCircleUser} from '@fortawesome/free-solid-svg-icons'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import styled from 'styled-components'
 import img from '../../images/271871166_2044402485734007_7144193533059826889_n.jpeg'
 import SideBar from '../siderbar/SideBar'
 import './settings.css'
+
 const Container = styled.div`
 display:flex;
 justify-content: space-between;
@@ -37,7 +37,7 @@ position:relative;
 const SettingsForm = styled.form`
 
 `
-const Title  = styled.h3`
+const Title = styled.h3`
     font-size: 30px;
     font-weight: 400;
     font-family: cursive;
@@ -85,38 +85,39 @@ const FormGroup = styled.div`
         font-weight: 300;
     }
 `
+
 // const 
 function Settings() {
-  return (
-    <Container>
-        <SettingsContainer>
-            <SettingsHeader>
+    return (
+        <Container>
+            <SettingsContainer>
+                <SettingsHeader>
                     <Title>Update Your Account</Title>
                     <DelAcct>Delete Account</DelAcct>
-            </SettingsHeader>
-            <SettingsProfilePics>
-            <ProfilePics src={img} />
-                <label htmlFor="profil-img">
-                <FontAwesomeIcon icon={faCircleUser} className='profileIcon'/>
-                </label>
-                <input type="file" name="" id="profil-img" accept='image/*' hidden />
-            </SettingsProfilePics>
-            <SettingsForm>
-                <FormGroup>
-                <label htmlFor="user-name">Username</label>
-                <input type="text" placeholder='Johndoe'  id='user-name'/>
-                <label htmlFor="email">Email</label>
-                <input type="email" placeholder='yag@gmail.com'  id='email'/>
-                <label htmlFor="password">Password</label>
-                <input type="password"  id='password'/>
-                 <button type='submit'>Update</button>
-                </FormGroup>
-           
-            </SettingsForm>
-        </SettingsContainer>
-        <SideBar/>
-    </Container>
-  )
+                </SettingsHeader>
+                <SettingsProfilePics>
+                    <ProfilePics src={img}/>
+                    <label htmlFor="profil-img">
+                        <FontAwesomeIcon icon={faCircleUser} className='profileIcon'/>
+                    </label>
+                    <input type="file" name="" id="profil-img" accept='image/*' hidden/>
+                </SettingsProfilePics>
+                <SettingsForm>
+                    <FormGroup>
+                        <label htmlFor="user-name">Username</label>
+                        <input type="text" placeholder='Johndoe' id='user-name'/>
+                        <label htmlFor="email">Email</label>
+                        <input type="email" placeholder='yag@gmail.com' id='email'/>
+                        <label htmlFor="password">Password</label>
+                        <input type="password" id='password'/>
+                        <button type='submit'>Update</button>
+                    </FormGroup>
+
+                </SettingsForm>
+            </SettingsContainer>
+            <SideBar/>
+        </Container>
+    )
 }
 
 export default Settings
